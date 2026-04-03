@@ -1,0 +1,49 @@
+@model  trilha_net_api_mvc_desafio.Models.Entities.Tarefa;
+@using trilha_net_api_mvc_desafio.Models.Entities;
+
+@{
+    ViewData["Title"] = "Deletar tarefa";
+}
+
+<h1>Deletar tarefa atual</h1>
+<p style="color: red;">Desejas realmente deletar a tarefa atual? Esta ação é irrevessível.</p>
+<hr>
+
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(x => x.Titulo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(x => x.Titulo)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(x => x.Descricao)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(x => x.Descricao)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(x => x.Data)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(x => x.Data)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(x => x.Status)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(x => x.Status)
+        </dd>
+    </dl>
+</div>
+
+<form asp-action="Deletar">
+    <input type="submit" value="Deletar" class="btn btn-danger">
+</form>
+<br>
+<a asp-action="Index">Voltar</a>

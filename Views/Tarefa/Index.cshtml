@@ -4,8 +4,15 @@
     ViewData["Title"] = "Listagem de tarefas";
 }
 
-<h1>Tarefas</h1>
-<p>
+<div class="navbar">
+    <h1>Tarefas</h1>
+
+    <form asp-action="Buscar" role="search" class="d-flex">
+        <input type="search" class="form-control me-2" placeholder="Pesquisar" aria-label="Buscar" name="busca">
+        <button class="btn btn-outline-primary" type="submit">Buscar</button>
+    </form>
+</div>
+ <p>
     <a asp-action="Adicionar">Nova tarefa</a>
 </p>
 
@@ -51,7 +58,6 @@
                 </td>
                 <td>
                     <a asp-action="Editar" asp-route-id="@item.Id">Editar</a> | 
-                    <a asp-action="Detalhes" asp-route-id="@item.Id">Detalhes</a> | 
                     <a asp-action="Deletar" asp-route-id="@item.Id">Deletar</a>
                 </td>
             </tr>

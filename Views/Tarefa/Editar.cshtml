@@ -1,16 +1,16 @@
+@model  trilha_net_api_mvc_desafio.Models.Entities.Tarefa;
 @using trilha_net_api_mvc_desafio.Models.Entities;
-@model trilha_net_api_mvc_desafio.Models.Entities.Tarefa;
 
 @{
-    ViewData["Title"] = "Adicionar nova tarefa";
+    ViewData["Title"] = "Editar tarefa";
 }
 
-<h1>Adicionar nova tarefa</h1>
+<h1>Editar tarefa atual</h1>
 <hr>
 
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Adicionar">
+        <form asp-action="Editar">
             <div class="form-group">
                 <label asp-for="Titulo" class="control-label"></label>
                 <input asp-for="Titulo" class="form-control">
@@ -36,7 +36,7 @@
             </div>
             <br>
             <div class="form-group">
-                <input type="submit" value="Adicionar" class="btn btn-primary">
+                <input type="submit" value="Editar" class="btn btn-primary">
             </div>
         </form>
     </div>
