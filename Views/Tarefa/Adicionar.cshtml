@@ -1,0 +1,19 @@
+@model trilha_net_api_mvc_desafio.Models.Entities.Tarefa;
+
+@{
+    ViewData["Title"] = "Adicionar nova tarefa";
+}
+
+<h1>Adicionar nova tarefa</h1>
+<hr>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Adicionar">
+            <div class="form-group">
+                <label asp-for="Titulo" class="control-label"></label>
+                <input asp-for="Titulo" class="form-control">
+            </div>
+        </form>
+    </div>
+</div>
