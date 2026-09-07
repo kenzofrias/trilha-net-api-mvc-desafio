@@ -1,10 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>trilha_net_api_mvc_desafio</RootNamespace>
+    <UserSecretsId>1271691d-33c4-4ea1-9013-8832daff4dad</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
